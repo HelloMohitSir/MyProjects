@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .project-card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 My Assignments Portfolio</h1>
+        
+        <div class="projects-grid">
+            <!-- Assignment 1 -->
+            <div class="project-card">
+                <h2>📁 Assignment 1</h2>
+                <p>View my first assignment project</p>
+                <a href="Assignment1/" class="project-link">View Project →</a>
+            </div>
+
+            <!-- Assignment 2 -->
+            <div class="project-card">
+                <h2>📁 Assignment 2</h2>
+                <p>View my second assignment project</p>
+                <a href="Assignment2/" class="project-link">View Project →</a>
+            </div>
+
+            <!-- Assignment 3 -->
+            <div class="project-card">
+                <h2>📁 Assignment 3</h2>
+                <p>View my third assignment project</p>
+                <a href="Assignment3/" class="project-link">View Project →</a>
+            </div>
+
+            <!-- Assignment 4 (Your Promo Widgets) -->
+            <div class="project-card">
+                <h2>✨ Assignment 4: Promo Widgets</h2>
+                <p>Interactive promo card with hover transitions and pulse loader animation</p>
+                <a href="Assignment4/" class="project-link">View Project →</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2024 My Assignments | Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
